@@ -1,7 +1,12 @@
 {
-  "backgroundColor": "#ffffff",
+  "backgroundColor": "#f5f5f1",
   "textColor": "#151515",
   "mutedColor": "#777777",
   "borderColor": "#d8d8d3",
-  "gridGap": 8
+  "gridGap": 8,
+  "headerBackgroundColor": "#f5f5f1",
+  "headerTextColor": "#151515",
+  "brandFontSize": 18,
+  "subtitleFontSize": 10,
+  "navigationFontSize": 11
 }
