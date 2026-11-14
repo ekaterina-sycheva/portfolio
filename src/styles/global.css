@@ -16,3 +16,21 @@
   background-color: var(--header-bg, var(--bg));
   color: var(--header-ink, var(--ink));
 }
+/* Responsive navigation: add at the END of global.css */
+.mobile-menu { display: none; }
+@media (max-width: 900px) {
+  .header { flex-direction: row; align-items: flex-start; justify-content: space-between; }
+  .desktop-nav { display: none; }
+  .mobile-menu { display: block; position: relative; flex-shrink: 0; }
+  .mobile-menu summary { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; cursor: pointer; list-style: none; }
+  .mobile-menu summary::-webkit-details-marker { display: none; }
+  .mobile-menu summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .menu-icon, .menu-icon::before, .menu-icon::after { display: block; width: 22px; height: 1px; background: currentColor; position: relative; transition: transform .2s; }
+  .menu-icon::before, .menu-icon::after { content: ''; position: absolute; left: 0; }
+  .menu-icon::before { top: -7px; }
+  .menu-icon::after { top: 7px; }
+  .mobile-menu[open] .menu-icon { background: transparent; }
+  .mobile-menu[open] .menu-icon::before { top: 0; transform: rotate(45deg); }
+  .mobile-menu[open] .menu-icon::after { top: 0; transform: rotate(-45deg); }
+  .mobile-menu nav { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; position: absolute; right: -20px; top: 44px; width: min(300px, 90vw); padding: 24px 20px; background: var(--header-bg, var(--bg)); color: var(--header-ink, var(--ink)); border: 1px solid var(--line); z-index: 20; }
+}
