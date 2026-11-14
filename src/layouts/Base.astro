@@ -1,4 +1,3 @@
-
 ---
 import '../styles/global.css';
 import settings from '../content/pages/site-settings.json';
@@ -73,12 +72,21 @@ const person = {
 <body>
   <header class="header">
     <a class="brand" href="/">EKATERINA SYCHEVA<span>GRAPHIC DESIGNER</span></a>
-    <nav aria-label="Main navigation">
+    <nav class="desktop-nav" aria-label="Main navigation">
       <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>WORK</a>
-      <a href="/about/">ABOUT</a>
-      <a href="/awards-exhibitions/">AWARDS &amp; EXHIBITIONS</a>
-      <a href="/press/">PRESS</a>
+      <a href="/about/" aria-current={Astro.url.pathname === '/about/' ? 'page' : undefined}>ABOUT</a>
+      <a href="/awards-exhibitions/" aria-current={Astro.url.pathname === '/awards-exhibitions/' ? 'page' : undefined}>AWARDS &amp; EXHIBITIONS</a>
+      <a href="/press/" aria-current={Astro.url.pathname === '/press/' ? 'page' : undefined}>PRESS</a>
     </nav>
+    <details class="mobile-menu">
+      <summary aria-label="Toggle navigation menu"><span class="menu-icon" aria-hidden="true"></span></summary>
+      <nav aria-label="Mobile navigation">
+        <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>WORK</a>
+        <a href="/about/" aria-current={Astro.url.pathname === '/about/' ? 'page' : undefined}>ABOUT</a>
+        <a href="/awards-exhibitions/" aria-current={Astro.url.pathname === '/awards-exhibitions/' ? 'page' : undefined}>AWARDS &amp; EXHIBITIONS</a>
+        <a href="/press/" aria-current={Astro.url.pathname === '/press/' ? 'page' : undefined}>PRESS</a>
+      </nav>
+    </details>
   </header>
   <main><slot /></main>
   <footer>
