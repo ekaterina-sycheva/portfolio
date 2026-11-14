@@ -4,10 +4,13 @@
   "discipline": "Brand Identity",
   "year": "To be added",
   "description": "Demonstration project. Replace with verified information and original artwork.",
-  "additionalDescription": "",
-  "cover": "",
-  "gallery": [],
+  "additionalDescription": "купук",
+  "gallery": [
+    {
+      "image": "/images/904419002_3499213513613383_8615751631661226843_n.jpg",
+      "alt": "кепукпк"
+    }
+  ],
   "published": false,
-  "order": 3,
-  "seoDescription": ""
+  "order": 3
 }
