@@ -73,3 +73,8 @@ content:
       - { name: mutedColor, label: Secondary text color (hex), type: string, required: true, description: 'Example: #777777' }
       - { name: borderColor, label: Border color (hex), type: string, required: true, description: 'Example: #d8d8d3' }
       - { name: gridGap, label: Project grid gap (px), type: number, required: true, default: 8, description: 'Recommended 0–40' }
+      - { name: headerBackgroundColor, label: Header background color (hex), type: string, required: true, default: '#f5f5f1' }
+      - { name: headerTextColor, label: Header text color (hex), type: string, required: true, default: '#151515' }
+      - { name: brandFontSize, label: Brand font size (px), type: number, required: true, default: 18 }
+      - { name: subtitleFontSize, label: Subtitle font size (px), type: number, required: true, default: 10 }
+      - { name: navigationFontSize, label: Navigation font size (px), type: number, required: true, default: 11 }
