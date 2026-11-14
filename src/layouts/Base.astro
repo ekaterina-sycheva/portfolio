@@ -1,21 +1,59 @@
+
 ---
 import '../styles/global.css';
 import settings from '../content/pages/site-settings.json';
-const hex = (value, fallback) => /^#[0-9a-fA-F]{6}$/.test(String(value)) ? value : fallback;
-const gap = Number.isFinite(Number(settings.gridGap)) ? Math.min(40, Math.max(0, Number(settings.gridGap))) : 8;
-const fontSize = (value, fallback) => Number.isFinite(Number(value)) ? Math.min(48, Math.max(8, Number(value))) : fallback;
-const themeCss = `:root{--bg:${hex(settings.backgroundColor, '#f5f5f1')};--ink:${hex(settings.textColor, '#151515')};--muted:${hex(settings.mutedColor, '#777777')};--line:${hex(settings.borderColor, '#d8d8d3')};--grid-gap:${gap}px;--header-bg:${hex(settings.headerBackgroundColor, '#f5f5f1')};--header-ink:${hex(settings.headerTextColor, '#151515')};--brand-size:${fontSize(settings.brandFontSize, 18)}px;--subtitle-size:${fontSize(settings.subtitleFontSize, 10)}px;--nav-size:${fontSize(settings.navigationFontSize, 11)}px}`;
+
+const hex = (value, fallback) =>
+  /^#[0-9a-fA-F]{6}$/.test(String(value)) ? value : fallback;
+
+const gap = Number.isFinite(Number(settings.gridGap))
+  ? Math.min(40, Math.max(0, Number(settings.gridGap)))
+  : 8;
+
+const fontSize = (value, fallback) =>
+  Number.isFinite(Number(value))
+    ? Math.min(48, Math.max(8, Number(value)))
+    : fallback;
+
+const theme = {
+  '--bg': hex(settings.backgroundColor, '#f5f5f1'),
+  '--ink': hex(settings.textColor, '#151515'),
+  '--muted': hex(settings.mutedColor, '#777777'),
+  '--line': hex(settings.borderColor, '#d8d8d3'),
+  '--grid-gap': `${gap}px`,
+  '--header-bg': hex(settings.headerBackgroundColor, '#f5f5f1'),
+  '--header-ink': hex(settings.headerTextColor, '#151515'),
+  '--brand-size': `${fontSize(settings.brandFontSize, 18)}px`,
+  '--subtitle-size': `${fontSize(settings.subtitleFontSize, 10)}px`,
+  '--nav-size': `${fontSize(settings.navigationFontSize, 11)}px`
+};
+
 const { title, description, image, schema } = Astro.props;
+
 const site = import.meta.env.PUBLIC_SITE_URL?.replace(/\/$/, '');
-const canonical = site ? new URL(Astro.url.pathname, `${site}/`).href : undefined;
-const socialImage = image && site ? new URL(image, `${site}/`).href : undefined;
-const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Ekaterina Sycheva', jobTitle: 'Graphic Designer', knowsAbout: ['Graphic Design','Brand Identity','Poster Design'], sameAs: ['https://www.behance.net/ka94gri073f','https://www.linkedin.com/in/ka94gri'] };
+const canonical = site
+  ? new URL(Astro.url.pathname, `${site}/`).href
+  : undefined;
+const socialImage = image && site
+  ? new URL(image, `${site}/`).href
+  : undefined;
+
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Ekaterina Sycheva',
+  jobTitle: 'Graphic Designer',
+  knowsAbout: ['Graphic Design', 'Brand Identity', 'Poster Design'],
+  sameAs: [
+    'https://www.behance.net/ka94gri073f',
+    'https://www.linkedin.com/in/ka94gri'
+  ]
+};
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" style={theme}>
 <head>
   <meta charset="utf-8" />
-  <style set:html={themeCss} />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
@@ -35,9 +73,17 @@ const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Eka
 <body>
   <header class="header">
     <a class="brand" href="/">EKATERINA SYCHEVA<span>GRAPHIC DESIGNER</span></a>
-    <nav aria-label="Main navigation"><a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>WORK</a><a href="/about/">ABOUT</a><a href="/awards-exhibitions/">AWARDS &amp; EXHIBITIONS</a><a href="/press/">PRESS</a></nav>
+    <nav aria-label="Main navigation">
+      <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>WORK</a>
+      <a href="/about/">ABOUT</a>
+      <a href="/awards-exhibitions/">AWARDS &amp; EXHIBITIONS</a>
+      <a href="/press/">PRESS</a>
+    </nav>
   </header>
   <main><slot /></main>
-  <footer><span>EKATERINA SYCHEVA © {new Date().getFullYear()}</span><span>GRAPHIC DESIGN PORTFOLIO</span></footer>
+  <footer>
+    <span>EKATERINA SYCHEVA © {new Date().getFullYear()}</span>
+    <span>GRAPHIC DESIGN PORTFOLIO</span>
+  </footer>
 </body>
 </html>
