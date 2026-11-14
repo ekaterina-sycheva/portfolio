@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import {press} from '../../lib/content';
+---
+<Base title="Press | Ekaterina Sycheva Graphic Designer" description="Independent media coverage and interviews featuring graphic designer Ekaterina Sycheva, with English summaries and links to original publications.">
+<section class="content"><div class="eyebrow">Selected coverage</div><h1>Press</h1><p>Independent publications featuring Ekaterina Sycheva and her graphic design practice. English titles are descriptive translations; original articles are linked below.</p>
+{press.map(item=><div class="press-item"><span>{item.year || ''}{item.year ? ' · ' : ''}{item.publication}</span><div><a href={item.url} target="_blank" rel="noopener noreferrer"><strong>{item.title} ↗</strong></a><p>{item.description}</p><p><a class="link" href={item.url} target="_blank" rel="noopener noreferrer">Read original publication ↗</a></p></div></div>)}
+</section>
+</Base>

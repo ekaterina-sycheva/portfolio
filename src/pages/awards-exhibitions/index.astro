@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import {recognition} from '../../lib/content';
+---
+<Base title="Awards & Exhibitions | Ekaterina Sycheva" description="Awards and international exhibitions featuring graphic designer Ekaterina Sycheva.">
+<section class="content"><div class="eyebrow">Recognition</div><h1>Awards &amp; Exhibitions</h1>
+{recognition.map(item=><div class="press-item"><span>{item.year} · {item.category}</span><div>{item.url ? <a href={item.url} target="_blank" rel="noopener noreferrer"><strong>{item.title} ↗</strong></a> : <strong>{item.title}</strong>}{item.description && <p>{item.description}</p>}</div></div>)}
+</section>
+</Base>

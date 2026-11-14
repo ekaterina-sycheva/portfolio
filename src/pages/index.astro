@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { projects } from '../lib/content';
+---
+<Base title="Ekaterina Sycheva | Graphic Designer" description="Portfolio of graphic designer Ekaterina Sycheva. Brand identity, poster design, awards, exhibitions and independent press coverage.">
+  <h1 class="sr-only">Graphic design portfolio of Ekaterina Sycheva</h1>
+  <section class="grid" aria-label="Selected graphic design projects">
+    {projects.map(project => <a class="tile" href={`/work/${project.slug}/`} aria-label={`View ${project.title}`}>
+      {project.cover ? <img src={project.cover} alt={`${project.title} — cover image`} loading="lazy" /> : <div class="placeholder" aria-hidden="true">ORIGINAL PROJECT IMAGE TO BE ADDED</div>}
+      <span class="tile-label">{project.title}</span>
+    </a>)}
+  </section>
+  {projects.length === 0 && <p class="empty-state">Projects will be published here.</p>}
+</Base>
+<style>.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}</style>
