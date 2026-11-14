@@ -11,3 +11,8 @@
 
 /* CMS-driven portfolio refinements */
 .placeholder{width:100%;height:100%}.gallery .placeholder{min-height:280px}.gallery .placeholder:first-child{min-height:480px}.tile:focus-visible,.back:focus-visible,nav a:focus-visible{outline:2px solid currentColor;outline-offset:3px}.gallery figure{margin:0}.gallery figure:first-child{grid-column:span 2}.gallery figure img{height:auto}.gallery figcaption{font-size:12px;color:var(--muted);padding-top:8px}.content p{line-height:1.5}.press-item strong{font-weight:500}.content .press-item p{font-size:14px}.empty-state{padding:30px;color:var(--muted);font-size:14px}.tile img{aspect-ratio:4/3}.content .eyebrow{margin-bottom:12px}@media(max-width:550px){.gallery figure:first-child{grid-column:span 1}}
+/* Header colors controlled by Pages CMS */
+.header {
+  background-color: var(--header-bg, var(--bg));
+  color: var(--header-ink, var(--ink));
+}
