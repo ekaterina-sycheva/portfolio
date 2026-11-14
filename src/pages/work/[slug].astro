@@ -1,22 +1,120 @@
+
 ---
 import Base from '../../layouts/Base.astro';
 import { projects } from '../../lib/content';
-export function getStaticPaths(){return projects.map(project=>({params:{slug:project.slug},props:{project}}));}
-const {project}=Astro.props;
-const schema = {'@context':'https://schema.org','@type':'CreativeWork',name:project.title,description:project.description,creator:{'@type':'Person',name:'Ekaterina Sycheva'}, ...(project.cover ? {image:project.cover}: {})};
+import { marked } from 'marked';
+
+export function getStaticPaths() {
+  return projects.map(project => ({
+    params: { slug: project.slug },
+    props: { project }
+  }));
+}
+
+const { project } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: project.title,
+  description: project.description,
+  creator: {
+    '@type': 'Person',
+    name: 'Ekaterina Sycheva'
+  },
+  ...(project.cover ? { image: project.cover } : {})
+};
+
+const descriptionHtml = marked.parse(project.description || '');
+const additionalDescriptionHtml = marked.parse(project.additionalDescription || '');
 ---
-<Base title={`${project.title} | Ekaterina Sycheva`} description={project.seoDescription || project.description} image={project.cover} schema={schema}>
+
+<Base
+  title={`${project.title} | Ekaterina Sycheva`}
+  description={project.seoDescription || project.description}
+  image={project.cover}
+  schema={schema}
+>
   <article class="project">
     <a href="/" class="back">← All projects</a>
+
     <div class="eyebrow">{project.discipline}</div>
     <h1>{project.title}</h1>
+
     <div class="intro">
-      <div><p>{project.description}</p>{project.additionalDescription && <p>{project.additionalDescription}</p>}</div>
-      <div><div class="meta"><span>Discipline</span><span>{project.discipline}</span></div><div class="meta"><span>Year</span><span>{project.year}</span></div><div class="meta"><span>Designer</span><span>Ekaterina Sycheva</span></div></div>
+      <div class="project-text" set:html={descriptionHtml} />
+
+      <div>
+        <div class="meta">
+          <span>Discipline</span>
+          <span>{project.discipline}</span>
+        </div>
+        <div class="meta">
+          <span>Year</span>
+          <span>{project.year}</span>
+        </div>
+        <div class="meta">
+          <span>Designer</span>
+          <span>Ekaterina Sycheva</span>
+        </div>
+      </div>
     </div>
+
     <div class="gallery">
-      {project.gallery?.length ? project.gallery.map(item=><figure><img src={item.image} alt={item.alt} loading="lazy" />{item.caption && <figcaption>{item.caption}</figcaption>}</figure>) : <div class="placeholder">ORIGINAL PROJECT IMAGES TO BE ADDED</div>}
+      {project.gallery?.length
+        ? project.gallery.map(item => (
+            <figure>
+              <img
+                src={item.image}
+                alt={item.alt}
+                loading="lazy"
+              />
+              {item.caption && <figcaption>{item.caption}</figcaption>}
+            </figure>
+          ))
+        : <div class="placeholder">ORIGINAL PROJECT IMAGES TO BE ADDED</div>
+      }
     </div>
-    {!project.gallery?.length && <p class="note">Original project artwork has not been uploaded yet.</p>}
+
+    {!project.gallery?.length && (
+      <p class="note">Original project artwork has not been uploaded yet.</p>
+    )}
+
+    {project.additionalDescription && (
+      <div
+        class="project-additional project-text"
+        set:html={additionalDescriptionHtml}
+      />
+    )}
   </article>
 </Base>
+
+<style>
+  .project-text :global(p) {
+    margin: 0 0 1.2em;
+    line-height: 1.65;
+  }
+
+  .project-text :global(h2) {
+    margin: 2em 0 0.8em;
+  }
+
+  .project-text :global(h3) {
+    margin: 1.5em 0 0.6em;
+  }
+
+  .project-text :global(ul),
+  .project-text :global(ol) {
+    margin: 0 0 1.5em;
+    padding-left: 1.5em;
+  }
+
+  .project-text :global(li) {
+    margin-bottom: 0.6em;
+    line-height: 1.65;
+  }
+
+  .project-additional {
+    margin-top: 50px;
+  }
+</style>
