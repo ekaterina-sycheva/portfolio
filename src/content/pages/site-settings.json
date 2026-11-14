@@ -4,7 +4,7 @@
   "mutedColor": "#777777",
   "borderColor": "#d8d8d3",
   "gridGap": 8,
-  "headerBackgroundColor": "#44444",
+  "headerBackgroundColor": "#000000",
   "headerTextColor": "#151515",
   "brandFontSize": 18,
   "subtitleFontSize": 10,
