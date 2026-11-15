@@ -1,0 +1,34 @@
+{
+  "slug": "between-use-and-disappearance",
+  "title": "Between Use and Disappearance",
+  "discipline": "Poster Design",
+  "year": "2026",
+  "description": "**Category:** Poster Design, Photography\n\nA series of posters exploring the everyday act of discarding objects and the rapid cycle of consumption, from purchase to disposal.\n\nOver the course of six months, I photographed abandoned furniture, household appliances, and building materials left outside my apartment building by neighbors. Disassembled beds, doors, toilets, and other discarded objects became the subjects of the series.\n\nStripped of their original functions, these objects exist in a transitional state between use and disappearance. I combined black-and-white photographs with clouds and fog, transforming ordinary household waste into surreal, almost ghostly landscapes.\n\nThe series was selected for the international poster biennial **Re: Rasa 2026**, which explored how personal experiences and local stories can be translated into a universal visual language.\n\nOne poster from the series, featuring a disassembled bed, was exhibited at **Paramadina University in Jakarta, Indonesia**, alongside works by **88 artists from 25 countries**.",
+  "additionalDescription": "## Exhibitions\n\n### 2026\n\n- Re: Rasa International Poster Biennial, Paramadina University, Jakarta, Indonesia.",
+  "cover": "/images/between-use-and-disappearance/01-disassembled-bed.jpg",
+  "gallery": [
+    {
+      "image": "/images/between-use-and-disappearance/01-disassembled-bed.jpg",
+      "alt": "A black-and-white poster combining a discarded bed with clouds, displayed on a brick wall"
+    },
+    {
+      "image": "/images/between-use-and-disappearance/02-discarded-doors.jpg",
+      "alt": "A black-and-white poster combining discarded doors and building materials with clouds"
+    },
+    {
+      "image": "/images/between-use-and-disappearance/03-household-objects.jpg",
+      "alt": "A black-and-white poster transforming discarded household objects into a foggy landscape"
+    },
+    {
+      "image": "/images/between-use-and-disappearance/04-discarded-toilet.jpg",
+      "alt": "A black-and-white poster combining a discarded toilet with clouds and expressive typography"
+    },
+    {
+      "image": "/images/between-use-and-disappearance/05-jakarta-exhibition.png",
+      "alt": "Posters from the series displayed in an exhibition space at Paramadina University in Jakarta"
+    }
+  ],
+  "published": true,
+  "order": 3,
+  "seoDescription": "A photographic poster series by Ekaterina Sycheva exploring consumption and disposal through discarded objects, clouds, and fog. Selected for Re: Rasa 2026."
+}
