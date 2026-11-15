@@ -2,12 +2,197 @@
   "slug": "illustrations-for-it-company-blog",
   "title": "Illustrations for an IT Company Blog",
   "discipline": "Graphic Design",
-  "year": "",
+  "year": "2023–2025",
   "description": "**Client:** Bercut  \n**Category:** Illustration, Graphic Design  \n**Tools:** Adobe Illustrator\n\nA series of digital vector illustrations created for articles published by Bercut on Habr, a Russian-language platform for technology professionals covering IT, programming, business, and the internet.\n\nThe illustrations follow Bercut's visual identity, incorporating the company's signature colors and graphic style. The compositions use visual metaphors inspired by programming terminology, IT slang, internet memes, and popular culture.\n\nSome illustrations also reinterpret classic works of art, including M. C. Escher's *Metamorphosis* and Heinrich Füger's *Prometheus Bringing Fire to Mankind*.",
   "additionalDescription": "## Awards\n\n### 2025\n\n- International Busan Design Award (IBDA), Idea Award.\n- VI International Art Competition “Varta Art Space”, First Place in Graphic Design / Professionals.\n\n## Exhibitions\n\n### 2024\n\n- Peru Design Biennial, Aeronautical Museum, Lima, Peru.",
   "cover": "/images/illustrations-for-it-company-blog/cover.webp",
-  "gallery": [],
-  "published": false,
+  "gallery": [
+    {
+      "image": "/images/illustrations-for-it-company-blog/01-future-car.png",
+      "alt": "Two Bercut characters in a futuristic car against a green cityscape"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/02-emotions-night.png",
+      "alt": "A person and a dog looking at stars in a blue nighttime landscape"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/03-access-control.png",
+      "alt": "Servers, locks, user profiles, and access permissions in an isometric composition"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/04-learning-resources-variant.png",
+      "alt": "Books, documents, a computer, and science symbols on a dark background"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/05-geometric-balance.png",
+      "alt": "Colorful geometric shapes balanced in a vertical stack"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/06-digital-intelligence.png",
+      "alt": "A circuit-board brain with charts, a processor, and a gear"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/07-creative-ideas.jpg",
+      "alt": "A person on a paper airplane surrounded by colorful ideas and emotions"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/08-space-navigation.jpg",
+      "alt": "A spaceship control room with a flat world supported by elephants on screen"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/09-flying-king.jpg",
+      "alt": "A crowned king floating above a steaming cauldron"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/10-software-assembly.jpg",
+      "alt": "An excavator loading bundled books onto a Sonatype Nexus truck"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/11-garden-wheelbarrow.png",
+      "alt": "A blue wheelbarrow filled with branches in a colorful garden"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/12-natural-elements.png",
+      "alt": "Fire, water, air, and earth arranged in a circular composition"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/13-password-security.png",
+      "alt": "A football stadium displaying an exposed password on its scoreboard"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/14-task-planning.png",
+      "alt": "A planner with a calendar, handwritten tasks, and colorful stationery"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/15-prometheus.png",
+      "alt": "A modern interpretation of Prometheus holding a torch and a coffee mug"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/16-database-types.png",
+      "alt": "An elephant balancing lettered blocks among colorful database data types"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/17-night-landscape.png",
+      "alt": "A person and a dog beneath stars spelling out emotions and success"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/18-technical-writing.png",
+      "alt": "A typewriter surrounded by books, papers, and potted plants"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/19-team-performance.png",
+      "alt": "Three people pulling a rope to move a large processor diagram"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/20-text-encoding.png",
+      "alt": "Four cats surrounded by printing rollers and sheets of garbled text"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/21-racing-team.png",
+      "alt": "A Bercut racing team changing the wheels of a Formula-style car"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/22-java-elephants.png",
+      "alt": "A Java-inspired character leading a stack of elephants through a savanna"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/23-computer-science-books.png",
+      "alt": "Books, folders, charts, and a cloud on a dark background"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/24-python-books.png",
+      "alt": "An isometric composition of programming books with a green Python book"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/25-gopher-ship.png",
+      "alt": "A gopher captain steering a sailing ship carrying colorful containers"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/26-cats-at-laptop.png",
+      "alt": "Two cats with books and coffee working at a laptop"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/27-mentoring-questions.png",
+      "alt": "Colleagues asking questions around a mentor appearing in a browser window"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/28-workplace-burnout.png",
+      "alt": "Colleagues with questions beside a person working at a desk surrounded by flames"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/29-dita-xml.png",
+      "alt": "A cat riding a robotic vacuum labeled DITA beside an XML block"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/30-learning-resources.png",
+      "alt": "An isometric arrangement of books, documents, a computer, and science symbols"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/31-technology-zoo.png",
+      "alt": "A keeper holding a bird of prey in front of outlined animals"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/32-documentation-orchestra.png",
+      "alt": "A conductor leading violinists labeled DITA, CAT, and NMT"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/33-network-cards.png",
+      "alt": "Isometric network cards floating among clouds"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/34-video-call-scream.png",
+      "alt": "Laptops showing a cat on video calls beside figures inspired by The Scream"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/35-software-bugs.png",
+      "alt": "Colorful beetles casting shadows across a blue field of grass"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/36-metamorphosis-analysis.png",
+      "alt": "A caterpillar, chrysalis, and butterfly with charts and analysis symbols"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/37-escher-programming-city.png",
+      "alt": "An Escher-inspired city of geometric buildings labeled with programming terms"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/38-grandi-paradox.png",
+      "alt": "Blue and green faceted geometric forms against a black background"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/39-distributed-cache.png",
+      "alt": "Connected database servers and folders with notification bubbles"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/40-debugging.png",
+      "alt": "A developer using a racket to catch bugs displayed on a computer screen"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/41-technical-writing-manual.png",
+      "alt": "A cat reading a technical writing manual in a pink beanbag chair"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/42-confidential-data.png",
+      "alt": "Two figures exchanging a top secret folder between small boats"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/43-high-speed-train.png",
+      "alt": "A pink superhero running above a high-speed train"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/44-linux-roots.png",
+      "alt": "A Linux penguin with roots for feet between green location markers"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/45-kafka-portraits.png",
+      "alt": "Three artists painting portraits of Franz Kafka in different colors"
+    },
+    {
+      "image": "/images/illustrations-for-it-company-blog/46-kaprekar-constant.png",
+      "alt": "The number 6174 at the center of a spiraling geometric tunnel"
+    }
+  ],
+  "published": true,
   "order": 2,
   "seoDescription": "Vector illustrations for Bercut’s technology blog on Habr by Ekaterina Sycheva, combining programming metaphors, internet culture, and references to classic art."
 }
