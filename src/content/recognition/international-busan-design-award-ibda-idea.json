@@ -1,7 +1,9 @@
 {
-  "title": "International Busan Design Award (IBDA IDEA)",
+  "title": "International Busan Design Award (IBDA)",
   "year": 2025,
   "category": "Award",
-  "description": "IBDA Idea Award in Communication Design for Illustrations for Bercut's Editorial Content",
+  "description": "Idea Award in Communication Design for Illustrations for Bercut’s Editorial Content.",
+  "url": "",
+  "order": 20,
   "published": true
 }

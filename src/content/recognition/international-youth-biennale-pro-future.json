@@ -1,7 +1,9 @@
 {
-  "title": "International Youth Biennale \"PRO FUTURE\"",
+  "title": "International Youth Biennale “PRO FUTURE”",
   "year": 2025,
   "category": "Award",
   "description": "Third-Degree Diploma.",
+  "url": "",
+  "order": 40,
   "published": true
 }

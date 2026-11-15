@@ -1,8 +1,9 @@
 {
-  "title": "\"BLUE_404\" International Exhibition",
+  "title": "BLUE_404 — Blue Not Found",
   "year": 2026,
   "category": "Exhibition",
-  "description": "International exhibition in Turkey.",
+  "description": "Selected for the international juried poster exhibition in Turkey.",
   "url": "https://posterpost.org/en/blue_404_winners/",
+  "order": 140,
   "published": true
 }

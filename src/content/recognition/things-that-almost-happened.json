@@ -1,7 +1,9 @@
 {
-  "title": "\"Things That Almost Happened\"\t",
+  "title": "“Things That Almost Happened”",
   "year": 2026,
   "category": "Exhibition",
   "description": "International virtual poster exhibition.",
+  "url": "",
+  "order": 110,
   "published": true
 }

@@ -1,7 +1,9 @@
 {
-  "title": "International Juried Art Exhibition \"Bullseye\"",
+  "title": "International Juried Art Exhibition “Bullseye”",
   "year": 2026,
   "category": "Exhibition",
-  "description": "International juried art exhibition in Turkey.",
+  "description": "International juried art exhibition in Istanbul, Turkey.",
+  "url": "",
+  "order": 120,
   "published": true
 }

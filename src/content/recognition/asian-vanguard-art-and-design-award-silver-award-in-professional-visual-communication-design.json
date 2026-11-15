@@ -1,7 +1,9 @@
 {
-  "title": "Asian Vanguard Art and Design Award\tSilver Award in Professional / Visual Communication Design.",
+  "title": "Asian Vanguard Art and Design Award",
   "year": 2025,
   "category": "Award",
   "description": "Silver Award in Professional / Visual Communication Design.",
+  "url": "",
+  "order": 80,
   "published": true
 }

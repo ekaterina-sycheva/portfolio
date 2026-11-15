@@ -50,6 +50,7 @@ content:
     fields:
       - { name: title, label: Name, type: string, required: true }
       - { name: year, label: Year, type: number, required: true }
+      - { name: order, label: Order within year, type: number, default: 100, description: 'Lower numbers appear first within the same year.' }
       - { name: category, label: Type, type: select, options: { values: [Award, Exhibition] } }
       - { name: description, label: Description, type: text }
       - { name: url, label: Organizer or evidence URL, type: string }
